@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./../styles/tareas.css" />
+        <link rel="stylesheet" type="text/css" href="../styles/teclado.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap" rel="stylesheet" />
+        <title>Tareas</title>
+    </head>
+
+    <body>
+        <main class="main">
+            <div class="col1">
+                <div class="user">
+                    <a class="linkProfile" href="#">
+                        <img src="./../img/SOLOFENIX.svg" alt="Foto de Perfíl" class="userImg" />
+                    </a>
+                    <p class="welcome">Bienvenido</p>
+                    <p class="userName" id="userName"></p>
+                </div>
+                <div class="newList">
+                    <button id="btnTask" class="btnList">
+                        Añadir nueva lista
+                    </button>
+                    <div class="containterItemList">
+                        <ul id="taskList" class="itemLists"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="containerTitle">
+                    <h1 class="title">Lista de Actividades</h1>
+                </div>
+                <div class="containerInput">
+                    <p type="text" id="inputList"class="input" ></p>
+                </div>
+                <div class="containerTeclado">                   
+                        <button class="letra">1</button>
+                        <button class="letra">2</button>
+                        <button class="letra">3</button>
+                        <button class="letra">4</button>
+                        <button class="letra">5</button>
+                        <button class="letra">6</button>
+                        <button class="letra">7</button>
+                        <button class="letra">8</button>
+                        <button class="letra">9</button>
+                        <button class="letra">0</button>
+                        <button class="letra"> <--</button>                     
+                    <br></br>                    
+                        <button class="letra">Q</button>
+                        <button class="letra">W</button>
+                        <button class="letra">E</button>
+                        <button class="letra">R</button>
+                        <button class="letra">T</button>
+                        <button class="letra">Y</button>
+                        <button class="letra">U</button>
+                        <button class="letra">I</button>
+                        <button class="letra">O</button>
+                        <button class="letra">P</button>
+                    <br></br>
+                        <button class="letra">A</button>
+                        <button class="letra">S</button>
+                        <button class="letra">D</button>
+                        <button class="letra">F</button>
+                        <button class="letra">G</button>
+                        <button class="letra">H</button>
+                        <button class="letra">J</button>
+                        <button class="letra">K</button>
+                        <button class="letra">L</button>
+                        <button class="letra">Ñ</button>                    
+                    <br></br>                    
+                        <button class="letra">Z</button>
+                        <button class="letra">X</button>
+                        <button class="letra">C</button>
+                        <button class="letra">V</button>
+                        <button class="letra">B</button>
+                        <button class="letra">N</button>
+                        <button class="letra">M</button>
+                        <button class="letra space" >space</button>
+                </div>
+                <div class="containeraddTask">
+                    <button id="btnList" class="btnList">Añadir Tarea</button>
+                </div>                
+                <div class="listPendientes">
+                    <h3 class="titlePendientes">Mis Tareas Pendientes</h3>
+                    <div class="containerListPendientes">
+                        <ul id="list" class="itemPendientes"></ul>
+                    </div>
+                </div>
+                <div class="containerNote">
+                    <p class="note">
+                        *Para marcar un item como hecho haz un click, para
+                        eliminarlo completamente haz doble click
+                    </p>
+                </div>
+            </div>
+            <div class="divArrow">
+                <a class="arrow" href="../../index.html">
+                    <p class="txtArrow">Volver</p>
+                    <img src="./../img/SOLOFENIX.svg" alt="Flecha" class="imgArrow" />
+                </a>
+            </div>
+        </main>
+        <script src="../script/sweetalert.min.js"></script>
+        <script src="../script/tareas.js"></script>
+        <script src=".././script/teclado.js"></script>        
+    </body>
+
+</html>

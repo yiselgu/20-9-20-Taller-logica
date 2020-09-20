@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/styles/styles.css">
+        <title>Registro Usuarios</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <h2 class="logo">
+                    <img src="./assets/img/SOLOFENIX.svg" class="logo">
+                </img>
+                </h2>
+                <ul class="contMenuHome">
+                    <li class="itemMenuHome"><a class="linkMenuHome" href="#">Registrarse</a></li>
+                    <li class="itemMenuHome"><a class="linkMenuHome" href="./assets/pages/login.html">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main mainRegister ">
+            <h1 class="titleHome">¿No Estas Registrado? ¡Registrate!</h1>            
+            <form id= "formRegistro" class="form" onsubmit="validarFormulario (event)">
+                <div class="form-group" >
+                    <label for="name" class="label">Nombre  </label>
+                    <input type="text" placeholder="Ej: juanita Alimaña" class="form-control validarInput" id="name"  maxlength="20">
+                    <small id="mensajeAlertaNombre" class="mensajeAlerta"></small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cel">Celular</label>
+                    <input type="text" class="form-control validarInput" id="cel" maxlength="20">
+                    <small id="mensajeAlertaCelular" class="mensajeAlerta"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="usuario" class="label">Usuario</label>
+                    <input type="text" placeholder="alimaña000" class="form-control validarInput" id="usuario" maxlength="100">
+                    <small id="mensajeAlertaUsuario" class="mensajeAlerta"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="label">Correo</label>
+                    <input type="email" placeholder="alimaña@correo.com" class="form-control validarInput" id="email" maxlength="100">
+                    <small id="mensajeAlertaCorreo" class="mensajeAlerta"></small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="" class="label">Contraseña</label>
+                    <input type="password" class="form-control validarInput" id="password" maxlength="20">
+                    <small id="mensajeAlertaPassword" class="mensajeAlerta"></small>
+                </div>
+
+                <button type="submit" class="btnEnviar">Registrarse</button>
+            </form>
+        </main>        
+        <script src="./assets/script/sweetalert.min.js"></script>                
+        <script src="./assets/script/index.js"></script>
+        <script src="./assets/script/storage.js"></script>      
+    </body>
+
+</html>
